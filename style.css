@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'west';
+    src: url('font_west/Cowboy\ Movie.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color01: #805500;
+    --color02: #D78E00;
+    --color03: #FFFAEE;
+
+    --font02: Verdana, Geneva, Tahoma, sans-serif;
+    --font03: "Edu AU VIC WA NT Guides", cursive;
+    --font04: 'west';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--color03);
+    min-height: 100vh;
+}
+
+header {
+    background-color: #805500;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-family: 'west';
+    font-size: 7vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font03);
+    font-size: 3vw;
+}
+
+section > p {
+    padding-bottom: 1em;
+}
+
+section.normal {
+    background-color: var(--color03);
+    color: black;
+}
+
+section.imagem {
+    background-color: bisque;
+    color: black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.842);
+    display: inline-block;
+    padding: 5px;
+    color: white;
+
+}
+
+section#img01 {
+    background-image: url('../exc-cordel/cordel01.jpg');
+    background-position: center;
+}
+
+section#img02 {
+    background-image: url('../exc-cordel/cacto.jpg');
+    background-position: left center;
+}
+
+footer {
+    background-color: #805500;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
